@@ -22,12 +22,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Chasse aux QR Codes</title>
-  <link rel="stylesheet" href="/QRcode01/style/styles.css">
+  <link rel="stylesheet" href="../QRcode01/style/styles.css">
 </head>
 
 <header>
   <H1>La fête de pâque à la MDL</H1>
-  <img src="/QRcode01/Photo/logo.png"width="80" height="90" alt="Logo MDL">
+  <img src="../QRcode01/Photo/logo.png"width="80" height="90" alt="Logo MDL">
 
   <!-- Espace utilisateur à droite -->
   <?php if ($isLoggedIn): ?>
@@ -38,8 +38,8 @@
 
   <?php else: ?>
     <div class="client-nonlog">
-      <a href="/QRcode01/Pages/connexion.php">Se Connecter</a>
-      <a href="/QRcode01/Pages/Inscription.php">S'inscrire</a>
+      <a href="../QRcode01/Pages/connexion.php">Se Connecter</a>
+      <a href="../QRcode01/Pages/Inscription.php">S'inscrire</a>
     </div>
   <?php endif; ?>
 
