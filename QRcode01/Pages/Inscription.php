@@ -14,7 +14,7 @@
 
 <body>
 <header>
-    <?php include './QRcode01/Modules/header.php'; ?>
+    <?php include '/QRcode01/Modules/header.php'; ?>
 </header>
 <div class="client-area">
     <div class="container">
