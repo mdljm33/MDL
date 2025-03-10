@@ -6,7 +6,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../style/styles.css">
+    <link rel="stylesheet" href="../QRcode01/style/styles.css">
     <title>Inscription</title>
 </head>
 
@@ -14,7 +14,7 @@
 
 <body>
 <header>
-    <?php include '../Modules/header.php'; ?>
+    <?php include '../QRcode01/Modules/header.php'; ?>
 </header>
 <div class="client-area">
     <div class="container">
@@ -53,7 +53,7 @@
   </div>
 </div>
 
-    <?php include '../Modules/footer.php'; ?>
+    <?php include '../QRcode01/Modules/footer.php'; ?>
 
 </body>
 </html>
