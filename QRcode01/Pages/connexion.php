@@ -3,7 +3,7 @@ if (session_status() === PHP_SESSION_NONE) {
     session_start();
 }
 
-include '../Modules/bd.php';
+include '../QRcode01/Modules/bd.php';
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $email = $_POST['email'];
@@ -43,7 +43,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 </header>
 <div class="client-area">
     <div class="container">
-      <form method="post" action="../QRcode01/index.php" class="register-form">
+      <form method="post" action="/QRcode01/index.php" class="register-form">
           <h2>Connexion</h2>
 
           <div class="form-group">
