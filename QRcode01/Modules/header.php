@@ -27,7 +27,7 @@
 
 <header>
   <H1>La fête de pâque à la MDL</H1>
-  <img src="../QRcode01/Photo/logo.png"width="80" height="90" alt="Logo MDL">
+  <img src="../Photo/logo.png"width="80" height="90" alt="Logo MDL">
 
   <!-- Espace utilisateur à droite -->
   <?php if ($isLoggedIn): ?>
