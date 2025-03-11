@@ -3,7 +3,7 @@ if (session_status() === PHP_SESSION_NONE) {
     session_start();
 }
 
-include '../Qrcode01/Modules/bd.php';
+include '../Modules/bd.php';
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $email = $_POST['email'];
@@ -37,7 +37,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
 
   <body>
-    <?php echo "<script>console.log('{$data}' );</script>";?>
   <header>
     <?php include '../Modules/header.php'; ?>
 </header>
