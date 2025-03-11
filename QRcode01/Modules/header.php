@@ -38,7 +38,7 @@
 
   <?php else: ?>
     <div class="client-nonlog">
-      <a href="../QRcode01/Pages/connexion.php">Se Connecter</a>
+      <a href="../Pages/connexion.php">Se Connecter</a>
       <a href="../QRcode01/Pages/Inscription.php">S'inscrire</a>
     </div>
   <?php endif; ?>

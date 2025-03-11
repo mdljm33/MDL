@@ -3,7 +3,7 @@ if (session_status() === PHP_SESSION_NONE) {
     session_start();
 }
 
-include '../QRcode01/Modules/bd.php';
+include '../Modules/bd.php';
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $email = $_POST['email'];
@@ -31,7 +31,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../QRcode01/style/styles.css">
+    <link rel="stylesheet" href="../style/styles.css">
     <title>Connexion</title>
 </head>
 
@@ -39,7 +39,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
   <body>
     <?php echo "<script>console.log('{$data}' );</script>";?>
   <header>
-    <?php include '../QRcode01/Modules/header.php'; ?>
+    <?php include '../Modules/header.php'; ?>
 </header>
 <div class="client-area">
     <div class="container">
@@ -62,6 +62,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
       </form>
   </div>
 </div>
-    <?php include '../QRcode01/Modules/footer.php'; ?>
+    <?php include '../Modules/footer.php'; ?>
 </body>
 </html>
