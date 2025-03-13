@@ -12,7 +12,7 @@
   
   if ($isLoggedIn) {
       $email = $_SESSION['email']; // Email de l'utilisateur stocké en session
-      $sql = "SELECT nom FROM utilisisateurs WHERE email='$email'";
+      $sql = "SELECT nom FROM user WHERE email='$email'";
       $result = $conn->query($sql);
       $user = $result->fetch_assoc();
   }
@@ -33,7 +33,7 @@
   <?php if ($isLoggedIn): ?>
   <div class="client-area">
     <a href="/MDL/Qrcode01/Pages/Classement.php" class="login-button">Votre classement</a>
-    <a href="/Serre Connecte/pages/logout.php"  class="login-button" >Se Déconnecter</a>
+    <a href="/MDL/Qrcode01/Modules/logout.php"  class="login-button" >Se Déconnecter</a>
   </div>
 
   <?php else: ?>

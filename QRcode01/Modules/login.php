@@ -10,7 +10,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $password = $_POST['password'];
 
     // Vérifier les informations de connexion
-    $sql = "SELECT id, password FROM utilisisateurs WHERE email='$email'";
+    $sql = "SELECT id, password FROM user WHERE email='$email'";
     $result = $conn->query($sql);
 
     if ($result->num_rows > 0) {

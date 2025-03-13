@@ -9,8 +9,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $password = password_hash($_POST['password'], PASSWORD_DEFAULT); // Hachage du mot de passe
 
  // Insertion des données dans la base de données
- $sql = "INSERT INTO utilisisateurs (nom, prenom, classe, email, password) VALUES 
-('$nom','$prenom','$classe', '$email', '$password')";
+ $sql = "INSERT INTO user (nom, prenom, classe, email, password) VALUES ('$nom','$prenom','$classe', '$email', '$password')";
  
         if ($conn->query($sql) === TRUE) {
             echo "Inscription réussie. Vous pouvez vous connecter !";
