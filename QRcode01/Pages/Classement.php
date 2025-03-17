@@ -17,12 +17,13 @@
 
 <div class="client-area">
     <div class="container">
+      <h2>CLASSEMENT<h2>
     <?php
 // Inclure le fichier de connexion à la base de données
 include '../Modules/bd.php';
 
 // Requête SQL pour récupérer les informations triées par score (du plus petit au plus grand)
-$sql = "SELECT nom, prenom, classe, score FROM user ORDER BY score ASC"; // ASC pour tri croissant
+$sql = "SELECT nom, prenom, classe, score FROM user ORDER BY score DESC "; // ASC pour tri croissant
 $score = $conn->query($sql);
 
 // Vérifie s'il y a des résultats
