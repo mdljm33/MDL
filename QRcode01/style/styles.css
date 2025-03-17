@@ -1,10 +1,10 @@
 /* Variables de couleurs pour le thème MDL et Pâques */ 
 :root {
-    --couleur-principale: #ffc400; /* Orange MDL */
+    --couleur-principale: #00ffdd; /* Orange MDL */
     --couleur-secondaire: #4CAF50; /* Vert pour la fraîcheur de Pâques */
     --couleur-fond: #F9F9F9; /* Fond clair pour un design épuré */
     --couleur-texte: #333333; /* Texte foncé pour lisibilité */
-    --couleur-accent: #FFC107; /* Accent jaune pour Pâques */
+    --couleur-accent: #07eeff; /* Accent jaune pour Pâques */
     --couleur-boutons: #8BC34A; /* Vert doux pour les boutons */
 }
 
@@ -24,13 +24,12 @@ header h1 {
     font-family: 'Comic Sans MS', cursive, sans-serif;
     margin: 0;
 }
+
 .client-area {
-    display: flex;
-    align-items: center;
-    justify-content: flex-end; /* Aligné à droite */
-    gap: 15px; /* Espacement entre les éléments de l'espace utilisateur */
-    transform: translateY(-70px);
+    transform: rotateY(200px);
+
 }
+
 
 
 .client-nonlog {
@@ -38,7 +37,7 @@ header h1 {
     gap: 15px; /* Espacement entre les boutons de connexion */
 }
 
-.client-area .login-button,
+.login-button,
 .client-nonlog a {
     background-color: #ff9900; /* Couleur des boutons */
     color: white;
@@ -69,16 +68,6 @@ body {
 
 h1 {
     margin: 0;
-}
-
-/* Section contenant le formulaire d'inscription */
-.client-area {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 500px 20px;
-    text-align: left;          /* Prend toute la hauteur de la fenêtre */
 }
 
 /* Conteneur du formulaire */
