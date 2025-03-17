@@ -33,7 +33,48 @@
           
           <div class="form-group">
               <label for="classe">Classe :</label>
-              <input type="text" id="classe" name="classe" required>
+              <select id="classe" name="classe" required>
+                  <option value="classe1">2nd01</option>
+                  <option value="classe2">2nd02</option>
+                  <option value="classe3">2nd03</option>
+                  <option value="classe4">2nd04</option>
+                  <option value="classe2">22</option>
+                  <option value="classe3">Classe 3</option>
+                  <option value="classe4">Classe 4</option>
+                  <option value="classe2">Classe 2</option>
+                  <option value="classe3">Classe 3</option>
+                  <option value="classe4">Classe 4</option>
+                  <option value="classe2">Classe 2</option>
+                  <option value="classe3">Classe 3</option>
+                  <option value="classe4">Classe 4</option>
+                  <option value="classe2">Classe 2</option>
+                  <option value="classe3">Classe 3</option>
+                  <option value="classe4">Classe 4</option>
+                  <option value="classe2">Classe 2</option>
+                  <option value="classe3">Classe 3</option>
+                  <option value="classe4">Classe 4</option>
+                  <option value="classe2">Classe 2</option>
+                  <option value="classe3">Classe 3</option>
+                  <option value="classe4">Classe 4</option>
+                  <option value="classe2">Classe 2</option>
+                  <option value="classe3">Classe 3</option>
+                  <option value="classe4">Classe 4</option>
+                  <option value="classe2">Classe 2</option>
+                  <option value="classe3">Classe 3</option>
+                  <option value="classe4">Classe 4</option>
+                  <option value="classe2">Classe 2</option>
+                  <option value="classe3">Classe 3</option>
+                  <option value="classe4">Classe 4</option>
+                  <option value="classe2">Classe 2</option>
+                  <option value="classe3">Classe 3</option>
+                  <option value="classe4">Classe 4</option>
+                  <option value="classe2">Classe 2</option>
+                  <option value="classe3">Classe 3</option>
+                  <option value="classe4">Classe 4</option>
+                  <option value="classe2">Classe 2</option>
+                  <option value="classe3">Classe 3</option>
+                  <option value="classe4">Classe 4</option>
+             </select>
           </div>
 
           <div class="form-group">
