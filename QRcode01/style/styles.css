@@ -1,6 +1,6 @@
 /* Variables de couleurs pour le thème MDL et Pâques */ 
 :root {
-    --couleur-principale: #00ffdd; /* Orange MDL */
+    --couleur-principale: #ffc400; /* Orange MDL */
     --couleur-secondaire: #4CAF50; /* Vert pour la fraîcheur de Pâques */
     --couleur-fond: #F9F9F9; /* Fond clair pour un design épuré */
     --couleur-texte: #333333; /* Texte foncé pour lisibilité */
@@ -25,11 +25,13 @@ header h1 {
     margin: 0;
 }
 
-.client-area {
-    transform: rotateY(200px);
-
-}
-
+.bouton03 {
+    position: absolute;
+    top: 240px;    /* Positionner à 10px du haut de la page */
+    right: 10px;  /* Positionner à 10px du bord droit de la page */
+    display: flex; /* Aligner les boutons côte à côte */
+    gap: 10px;    /* Espacement entre les boutons */
+  }
 
 
 .client-nonlog {
@@ -48,7 +50,7 @@ header h1 {
     transform: translateY(-70px); /* Déplace les boutons de 40px vers le bas */
 }
 
-.client-area .login-button:hover,
+.bouton03 .login-button:hover,
 .client-nonlog a:hover {
     background-color: #e68a00; /* Couleur au survol */
 }
@@ -64,11 +66,35 @@ body {
     margin: 0;
     padding: 0;
     min-height: 100vh;
+    height: calc(100% - 60px); /* On enlève la hauteur du header */
+
 }
 
 h1 {
     margin: 0;
 }
+/* tableau classement ----------------------------------*/
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+table, th, td {
+    border: 1px solid #ddd;
+}
+th, td {
+    padding: 8px;
+    text-align: left;
+}
+th {
+    background-color: #f2f2f2;
+}
+/* tableau classement ----------------------------------*/
+.client-area {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 200px;
+  }
 
 /* Conteneur du formulaire */
 .container {

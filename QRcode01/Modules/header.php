@@ -22,7 +22,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Chasse aux QR Codes</title>
-  <link rel="stylesheet" href="/MDL/QRcode01/style/styles.css">
+  <link rel="stylesheet" href="../style/styles.css">
 </head>
 
 <header>
@@ -31,7 +31,7 @@
 
   <!-- Espace utilisateur à droite -->
   <?php if ($isLoggedIn): ?>
-  <div class="client-area">
+  <div class="bouton03">
     <a href="/MDL/Qrcode01/Pages/Classement.php" class="login-button">Votre classement</a>
     <a href="/MDL/Qrcode01/Modules/logout.php"  class="login-button" >Se Déconnecter</a>
   </div>

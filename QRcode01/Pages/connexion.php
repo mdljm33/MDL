@@ -8,10 +8,11 @@
 </head>
 
 
-  <body>
-  <header>
+
+<body>
+
     <?php include '../Modules/header.php'; ?>
-</header>
+
 <div class="client-area">
     <div class="container">
       <form method="post" action="/MDL/QRcode01/Modules/login.php" class="register-form">
