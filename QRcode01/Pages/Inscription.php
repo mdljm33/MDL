@@ -73,7 +73,7 @@
                   <option value="classe4">Classe 4</option>
                   <option value="classe2">Classe 2</option>
                   <option value="classe3">Classe 3</option>
-                  <option value="classe4">Classe 4</option>
+                  <option value="classe4">TSTI2D</option>
              </select>
           </div>
 
