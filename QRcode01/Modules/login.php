@@ -21,7 +21,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         
 
 
-            header('Location:/MDL/Qrcode01/index.php');
+            header('Location:/index.php');
             exit;
         }
     }

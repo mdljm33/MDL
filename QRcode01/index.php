@@ -9,12 +9,12 @@
 </head>
 
 <header>
-  <?php include '../QRcode01/Modules/header.php'; ?>
+  <?php include '../Modules/header.php'; ?>
 </header>
 
 <body>
 <body>
 
 <footer>
-    <?php include '../QRcode01/Modules/footer.php'; ?>
+    <?php include '../Modules/footer.php'; ?>
 <footer>
