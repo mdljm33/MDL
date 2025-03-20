@@ -72,7 +72,15 @@ body {
 
 h1 {
     margin: 0;
+    font-weight: bold; /* Rend le texte en gras */
+    margin-bottom: 15px; /* Crée un espace de 15px entre les paragraphes */
 }
+
+p {
+    font-size: 20px; /* Rend le texte plus petit */
+    font-weight: normal; /* Rend le texte non gras */
+    margin-bottom: 15px; /* Crée un espace de 15px entre les paragraphes */
+  }
 /* tableau classement ----------------------------------*/
 table {
     width: 100%;
@@ -102,6 +110,7 @@ th {
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     width: 100%;
+    text-align: center; /* Centre le texte horizontalement */
     max-width: 500px; /* Largeur maximale du formulaire */
     padding: 20px;
     box-sizing: border-box; /* Assure que le padding ne dépasse pas la largeur */

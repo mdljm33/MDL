@@ -27,19 +27,19 @@
 
 <header>
   <H1>La fête de pâque à la MDL</H1>
-  <img src="/Photo/logo.png"width="80" height="90" alt="Logo MDL">
+  <img src="/MDL/QRcode01/Photo/logo.png"width="80" height="90" alt="Logo MDL">
 
   <!-- Espace utilisateur à droite -->
   <?php if ($isLoggedIn): ?>
   <div class="bouton03">
-    <a href="/Pages/Classement.php" class="login-button">Votre classement</a>
-    <a href="/Modules/logout.php"  class="login-button" >Se Déconnecter</a>
+    <a href="/MDL/QRcode01/Pages/Classement.php" class="login-button">Votre classement</a>
+    <a href="/MDL/QRcode01/Modules/logout.php"  class="login-button" >Se Déconnecter</a>
   </div>
 
   <?php else: ?>
     <div class="client-nonlog">
-      <a href="/Pages/connexion.php">Se Connecter</a>
-      <a href="/Pages/Inscription.php">S'inscrire</a>
+      <a href="/MDL/QRcode01/Pages/connexion.php">Se Connecter</a>
+      <a href="/MDL/QRcode01/Pages/Inscription.php">S'inscrire</a>
     </div>
   <?php endif; ?>
 
