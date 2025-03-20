@@ -15,6 +15,6 @@ if (isset($_SESSION['loggedin'])) {
 }
 
 // Redirection vers la page d'accueil
-header('Location: /MDL/Qrcode01/index.php');
+header('Location: /index.php');
 exit; // Terminer le script
 ?>
