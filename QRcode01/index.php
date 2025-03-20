@@ -9,20 +9,12 @@
 </head>
 
 <header>
-  <?php include '../QRcode01/Modules/header.php'; ?>
+  <?php include '/Modules/header.php'; ?>
 </header>
 
 <body>
-  <div class="client-area">
-    <div class="container">
-      <div>
-        <h1>Avant de jouer: <h1>
-          <p> - Vous venez de scanner votre premier QR-code, pensez à vous inscrire, puis connectez vous avec le compte que vous venez de créer. <p>
-          <p> - A chaque fois que vous scanez un QR-code, vous devez vous connecter et SURTOUT le valider.<p>
-        <h1> But du jeu <h1>
-          <p> Scanez le plus de QR-code possible avant la fin de la semaine !! <p>
 <body>
 
 <footer>
-    <?php include '../QRcode01/Modules/footer.php'; ?>
+    <?php include '/Modules/footer.php'; ?>
 <footer>

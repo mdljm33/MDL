@@ -18,7 +18,7 @@
 
 <div class="client-area">
     <div class="container">
-      <form method="post" action="/MDL/Qrcode01/Modules/register_user.php" class="register-form">
+      <form method="post" action="/Modules/register_user.php" class="register-form">
           <h2>Inscription</h2>
 
           <div class="form-group">
