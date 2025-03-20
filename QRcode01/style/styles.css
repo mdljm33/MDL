@@ -96,6 +96,19 @@ th, td {
 th {
     background-color: #f2f2f2;
 }
+
+/* Ajouter un style pour mettre en surbrillance l'utilisateur connecté */
+.highlight {
+    background-color: green;
+    color: white;
+    font-weight: bold;
+  }
+  
+  /* Optionnel : Vous pouvez aussi personnaliser le texte "1er", "2e" comme suit */
+  table td:first-child {
+    font-weight: bold;
+  }
+  
 /* tableau classement ----------------------------------*/
 .client-area {
     display: flex;
@@ -109,9 +122,9 @@ th {
     background-color: white;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    width: 100%;
+    width: auto;
     text-align: center; /* Centre le texte horizontalement */
-    max-width: 500px; /* Largeur maximale du formulaire */
+    max-width: 800px; /* Largeur maximale du formulaire */
     padding: 20px;
     box-sizing: border-box; /* Assure que le padding ne dépasse pas la largeur */
 }
