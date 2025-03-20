@@ -10,7 +10,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $password = $_POST['password'];
 
     // Vérifier les informations de connexion
-    $sql = "SELECT id, password FROM user WHERE email='$email'";
+    $sql = "SELECT id, password, nom FROM user WHERE email='$email'";
     $result = $conn->query($sql);
 
     if ($result->num_rows > 0) {
@@ -18,6 +18,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         if (password_verify($password, $user['password'])) {
             $_SESSION['loggedin'] = true;
             $_SESSION['email'] = $email;
+            $_SESSION['nom_utilisateur'] = $user['nom'];  // Nom de l'utilisateur connecté
+
         
 
 
