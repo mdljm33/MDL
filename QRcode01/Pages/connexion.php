@@ -10,6 +10,10 @@
 
 
 <body>
+<?php if (!empty($error)) : ?>
+    <p style="color: red; text-align: center;"><?php echo $error; ?></p>
+<?php endif; ?>
+
 
     <?php include '../Modules/header.php'; ?>
 

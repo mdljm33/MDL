@@ -5,29 +5,53 @@ if (session_status() === PHP_SESSION_NONE) {
 
 include '../Modules/bd.php';
 
+$error = ""; // Variable pour stocker les erreurs
+
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-    $email = $_POST['email'];
-    $password = $_POST['password'];
+    $email = trim($_POST['email']);
+    $password = trim($_POST['password']);
 
-    // Vérifier les informations de connexion
-    $sql = "SELECT id, password, nom FROM user WHERE email='$email'";
-    $result = $conn->query($sql);
-
-    if ($result->num_rows > 0) {
-        $user = $result->fetch_assoc();
-        if (password_verify($password, $user['password'])) {
-            $_SESSION['loggedin'] = true;
-            $_SESSION['email'] = $email;
-            $_SESSION['nom_utilisateur'] = $user['nom'];  // Nom de l'utilisateur connecté
-
-        
-
-
-            header('Location:/MDL/QRcode01/index.php');
-            exit;
+    if (!empty($email) && !empty($password)) {
+        // Vérifie si la connexion à la BD fonctionne
+        if (!$conn) {
+            die("Erreur de connexion : " . mysqli_connect_error());
         }
-    }
-    $error = "Identifiants incorrects.";
+
+        // Préparer la requête SQL pour éviter l'injection
+        $stmt = $conn->prepare("SELECT id, password, nom FROM user WHERE email = ?");
+        if (!$stmt) {
+            die("Erreur SQL : " . $conn->error);
+        }
+
+        $stmt->bind_param("s", $email);
+        $stmt->execute();
+        $result = $stmt->get_result();
+
+        if ($result->num_rows > 0) {
+            $user = $result->fetch_assoc();
+
+            if (password_verify($password, $user['password'])) {
+                $_SESSION['loggedin'] = true;
+                $_SESSION['email'] = $email;
+                $_SESSION['nom_utilisateur'] = $user['nom']; // Stocke le nom de l'utilisateur
+
+                header('Location:/MDL/QRcode01/index.php');
+                
+            } else {
+                $error = "Mot de passe incorrect.";
+            }
+        } else {
+            $error = "Identifiant incorrect.";
+        }
+        $stmt->close();
+    } else {
+        $error = "Veuillez remplir tous les champs.";
+        exit;}
 }
 ?>
+
+<!-- Affichage de l'erreur dans le formulaire -->
+<?php if (!empty($error)) : ?>
+    <p style="color: red; text-align: center;"><?php echo $error; ?></p>
+<?php endif; ?>
 
