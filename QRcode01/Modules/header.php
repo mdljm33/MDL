@@ -26,7 +26,7 @@
 </head>
 
 <header>
-  <H1>La fête de pâque à la MDL</H1>
+  <H1>La chasse aux QR-codes à la MDL</H1>
   <img src="/MDL/QRcode01/Photo/logo.png"width="80" height="90" alt="Logo MDL">
 
   <!-- Espace utilisateur à droite -->

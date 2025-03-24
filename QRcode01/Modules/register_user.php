@@ -12,7 +12,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
  $sql = "INSERT INTO user (nom, prenom, classe, email, password) VALUES ('$nom','$prenom','$classe', '$email', '$password')";
  
         if ($conn->query($sql) === TRUE) {
-            header('Location:/index.php');
+            header('Location:/MDL/Qrcode01/index.php');
         } else {
             echo "Erreur : " . $conn->error;
          }

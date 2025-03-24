@@ -11,23 +11,27 @@
 
 /* Header------------------------------------------------------------------------------------------------------------------------*/
 header {
-    background-color: var(--couleur-boutons);
+    background: url('/MDL/Qrcode01/Photo/bois.jpg') no-repeat center center; 
+    background-size: cover; /* Ajuste l'image pour couvrir tout l'écran */
+
     color: white;
     text-align: center;
-    height: 240px;
-    padding: 20px 0;
-    font-size: 2rem;
+    height: 165px; /* Réduction de la hauteur */
+    padding: 10px 0;
+    font-size: 1.8rem;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: relative;
 }
 
 header h1 {
     font-family: 'Comic Sans MS', cursive, sans-serif;
     margin: 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 .bouton03 {
     position: absolute;
-    top: 240px;    /* Positionner à 10px du haut de la page */
+    top: 200px;    /* Positionner à 10px du haut de la page */
     right: 10px;  /* Positionner à 10px du bord droit de la page */
     display: flex; /* Aligner les boutons côte à côte */
     gap: 10px;    /* Espacement entre les boutons */
@@ -61,7 +65,8 @@ header h1 {
 /*Body----------------------------------------------------------------------------------------------------------------------*/
 body {
     font-family: 'Arial', sans-serif;
-    background-color: var(--couleur-principale);
+    background : url('/MDL/Qrcode01/Photo/paque.jpg');
+    background-size: cover;
     color: var(--couleur-texte);
     margin: 0;
     padding: 0;
@@ -122,12 +127,15 @@ th {
     background-color: white;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    width: auto;
-    text-align: center; /* Centre le texte horizontalement */
-    max-width: 800px; /* Largeur maximale du formulaire */
+    width: 90%; /* Adapte la largeur à l'écran tout en laissant un peu d'espace */
+    max-width: 600px; /* Largeur maximale pour éviter un trop grand étirement */
+    text-align: center;
     padding: 20px;
-    box-sizing: border-box; /* Assure que le padding ne dépasse pas la largeur */
+    box-sizing: border-box;
+    margin: 0 auto; /* Centre le container horizontalement */
+    overflow: hidden; /* Évite le débordement du contenu */
 }
+
 
 /* Style des champs de saisie et des boutons */
 input, button {
@@ -137,6 +145,7 @@ input, button {
     border: 1px solid #ddd;
     border-radius: 5px;
     font-size: 1rem;
+    box-sizing: border-box; /* Empêche le débordement en incluant padding et border */
 }
 
 input[type="text"], input[type="email"], input[type="password"] {
@@ -174,40 +183,43 @@ h2 {
 
 /* Footer Styles--------------------------------------------------------------------------------------------------------- */
 footer {
-    background-color: var(--couleur-boutons);
+    background: url('/MDL/Qrcode01/Photo/bois.jpg') no-repeat center center; 
+    background-size: cover; /* Ajuste l'image pour couvrir tout l'écran */
     position: fixed; /* Fixe le footer en bas de l'écran */
     bottom: 0; /* Positionne le footer en bas */
     left: 0; /* Aligne le footer à gauche */
     width: 100%; /* Le footer occupe toute la largeur de l'écran */
     box-sizing: border-box;
-    padding: 10px 0; /* Optionnel : ajout d'un peu d'espace autour du footer */
+    padding: 10px 20px; /* Ajout d'un padding pour l'espacement */
+    display: flex; /* Utilisation de flexbox */
+    justify-content: space-between; /* Aligne le contenu sur les extrémités */
+    align-items: center; /* Centre les éléments verticalement */
 }
 
-footer h1 {
-    color: rgb(255, 255, 255);
-    text-align: center;
-    margin-right: 20px;
-    transform: translateY(-60px); /* Déplace le texte vers le haut si nécessaire */
-    display: flex;
-    justify-content: center;
-}
-
-footer h2 {
+/* Alignement du texte à gauche */
+.footer-left {
     color: white;
-    text-align: center;
-    margin-left: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: left;
+}
+
+/* Alignement du texte et du logo à droite */
+.footer-right {
     display: flex;
+    align-items: center;
+    gap: 10px; /* Espacement entre le logo et le texte */
 }
 
-footer img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+.footer-right h1 {
+    color: rgb(255, 255, 255);
+    margin: 0; /* Supprime la marge pour un bon alignement */
 }
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+/* Ajustement du logo */
+.footer-right img {
+    width: 50px;
+    height: 50px;
 }
+
 /* Footer Styles------------------------------------------------------------------------------------------------------- */
