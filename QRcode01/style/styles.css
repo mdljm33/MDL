@@ -23,6 +23,7 @@ header {
     position: relative;
 }
 
+
 header h1 {
     font-family: 'Comic Sans MS', cursive, sans-serif;
     margin: 0;
@@ -135,7 +136,15 @@ th {
     margin: 0 auto; /* Centre le container horizontalement */
     overflow: hidden; /* Évite le débordement du contenu */
 }
-
+/* css menu deroulent */
+.menu-deroul select {
+    width: 100%; /* Prend toute la largeur disponible */
+    height: 40px; /* Augmente la hauteur de la case */
+    padding: 10px; /* Ajoute un espacement intérieur pour plus de confort */
+    border: 1px solid #ddd; /* Bordure grise */
+    border-radius: 5px; /* Coins arrondis */
+    font-size: 1rem; /* Taille de police */
+}
 
 /* Style des champs de saisie et des boutons */
 input, button {

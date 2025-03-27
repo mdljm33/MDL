@@ -77,8 +77,8 @@ if ($result_top10->num_rows > 0) {
         $ranking_position++;
     }
 
-    // Ajout de la ligne pour l'utilisateur connecté en bas du tableau
-    if ($user_data) {
+    // N'affiche pas la ligne de l'utilisateur connecté s'il est déjà dans le top 10
+    if ($user_data && !$isUserInTop10) {
         $highlight_class = 'style="background-color: yellow; font-weight: bold;"';
         echo "<tr $highlight_class>
                 <td>" . $user_data["rank"] . "e</td>
@@ -102,4 +102,5 @@ $conn->close();
 
 <footer>
     <?php include '../Modules/footer.php'; ?>
-<footer>
+</footer>
+</html>

@@ -27,7 +27,12 @@
 
 <header>
   <H1>La chasse aux QR-codes à la MDL</H1>
-  <img src="/MDL/QRcode01/Photo/logo.png"width="80" height="90" alt="Logo MDL">
+
+
+<a href="/MDL/QRcode01/index.php">
+    <img src="/MDL/QRcode01/Photo/logo.png" width="80" height="90" alt="Logo MDL">
+</a>
+
 
   <!-- Espace utilisateur à droite -->
   <?php if ($isLoggedIn): ?>

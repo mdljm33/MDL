@@ -36,17 +36,18 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 $_SESSION['nom_utilisateur'] = $user['nom']; // Stocke le nom de l'utilisateur
 
                 header('Location:/MDL/QRcode01/index.php');
-                
+                exit; // Assurez-vous que le script ne continue pas après la redirection
             } else {
-                $error = "Mot de passe incorrect.";
+                $error = "Identifiant ou mot de passe incorrect."; // Message générique
             }
         } else {
-            $error = "Identifiant incorrect.";
+            $error = "Identifiant ou mot de passe incorrect."; // Message générique
         }
         $stmt->close();
     } else {
         $error = "Veuillez remplir tous les champs.";
-        exit;}
+        exit;
+    }
 }
 ?>
 
@@ -54,4 +55,3 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 <?php if (!empty($error)) : ?>
     <p style="color: red; text-align: center;"><?php echo $error; ?></p>
 <?php endif; ?>
-
